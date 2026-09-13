@@ -1,173 +1,173 @@
-<!-- ==================================================
-     PRO-MAX BEAT LAB — OFFICIAL MODULE
-================================================== -->
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
 
-<a
-  class="module-card promax-beat-lab-module"
-  href="https://pro-max-beat-maker.netlify.app"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Ouvri PRO-MAX Beat Lab"
->
-  <div class="beat-lab-icon" aria-hidden="true">
-    <span>♫</span>
-  </div>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <div class="beat-lab-content">
-    <p class="beat-lab-label">
-      BSS1815 PRO-MAX DMP
-    </p>
+  <meta name="theme-color" content="#050301">
 
-    <h3>PRO-MAX BEAT LAB</h3>
+  <meta
+    name="description"
+    content="PRO-MAX Beat Lab — kreye beat, melody ak mizik konplè sou entènèt."
+  >
+
+  <title>PRO-MAX Beat Lab</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --orange: #ff7518;
+      --apricot: #ffb16a;
+      --black: #050301;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: var(--black);
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      overflow: hidden;
+      color: var(--apricot);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at top,
+          #542000 0%,
+          #180902 42%,
+          var(--black) 72%,
+          #000000 100%
+        );
+    }
+
+    .loading-card {
+      width: min(100%, 560px);
+      padding: 38px 25px;
+      border: 2px solid var(--orange);
+      border-radius: 24px;
+      background:
+        linear-gradient(
+          145deg,
+          #1d0c04,
+          var(--black) 70%,
+          #000000
+        );
+      box-shadow:
+        0 0 35px rgba(255, 117, 24, 0.3),
+        0 25px 65px #000000;
+    }
+
+    .music-icon {
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: 60px;
+      text-shadow:
+        0 0 25px rgba(255, 117, 24, 0.7);
+      animation: pulse 1.2s ease-in-out infinite alternate;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: clamp(32px, 8vw, 56px);
+      line-height: 1;
+    }
+
+    p {
+      margin-bottom: 24px;
+      color: var(--apricot);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .open-button {
+      display: inline-flex;
+      width: min(100%, 300px);
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      color: #120701;
+      font-size: 16px;
+      font-weight: 900;
+      text-decoration: none;
+      border: 2px solid var(--orange);
+      border-radius: 13px;
+      background:
+        linear-gradient(
+          135deg,
+          var(--apricot),
+          var(--orange)
+        );
+      box-shadow:
+        0 0 28px rgba(255, 117, 24, 0.4);
+    }
+
+    .open-button:active {
+      transform: scale(0.97);
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(0.94);
+      }
+
+      to {
+        transform: scale(1.08);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="loading-card">
+    <div class="music-icon" aria-hidden="true">
+      ♫
+    </div>
+
+    <h1>PRO-MAX BEAT LAB</h1>
 
     <p>
-      Kreye beat, melody ak mizik konplè dirèkteman sou entènèt.
+      Beat Lab la ap ouvri otomatikman.
     </p>
 
-    <span class="beat-lab-button">
+    <a
+      class="open-button"
+      href="https://pro-max-beat-lab.louismaxauto600.chatgpt.site"
+    >
       OUVRI BEAT LAB
-    </span>
-  </div>
-</a>
+    </a>
+  </main>
 
-<style>
-  .promax-beat-lab-module {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    min-height: 220px;
-    padding: 24px;
-    overflow: hidden;
-    color: #ffb16a;
-    text-decoration: none;
-    border: 2px solid #ff7518;
-    border-radius: 22px;
-    background:
-      radial-gradient(
-        circle at top right,
-        rgba(255, 117, 24, 0.32),
-        transparent 38%
-      ),
-      linear-gradient(
-        145deg,
-        #1d0c04,
-        #050301 65%,
-        #000000
-      );
-    box-shadow:
-      0 18px 45px rgba(0, 0, 0, 0.75),
-      0 0 28px rgba(255, 117, 24, 0.22);
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease;
-  }
+  <script>
+    "use strict";
 
-  .promax-beat-lab-module::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-      repeating-radial-gradient(
-        circle at 100% 0,
-        transparent 0 32px,
-        rgba(255, 117, 24, 0.08) 34px 36px
-      );
-  }
+    const BEAT_LAB_URL =
+      "https://pro-max-beat-lab.louismaxauto600.chatgpt.site";
 
-  .promax-beat-lab-module:hover,
-  .promax-beat-lab-module:focus-visible {
-    transform: translateY(-5px);
-    outline: none;
-    box-shadow:
-      0 24px 55px rgba(0, 0, 0, 0.85),
-      0 0 38px rgba(255, 117, 24, 0.42);
-  }
-
-  .beat-lab-icon {
-    position: relative;
-    z-index: 1;
-    flex: 0 0 88px;
-    width: 88px;
-    height: 88px;
-    display: grid;
-    place-items: center;
-    color: #050301;
-    font-size: 44px;
-    font-weight: 900;
-    border: 3px solid #ff7518;
-    border-radius: 50%;
-    background:
-      linear-gradient(
-        135deg,
-        #ffb16a,
-        #ff7518
-      );
-    box-shadow:
-      0 0 28px rgba(255, 117, 24, 0.48);
-  }
-
-  .beat-lab-content {
-    position: relative;
-    z-index: 1;
-  }
-
-  .beat-lab-label {
-    margin: 0 0 7px;
-    color: #ffb16a;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 2px;
-  }
-
-  .beat-lab-content h3 {
-    margin: 0 0 10px;
-    color: #ff7518;
-    font-size: clamp(25px, 4vw, 38px);
-    line-height: 1;
-  }
-
-  .beat-lab-content p {
-    margin: 0 0 18px;
-    color: #ffb16a;
-    font-size: 16px;
-    line-height: 1.55;
-  }
-
-  .beat-lab-button {
-    display: inline-flex;
-    min-height: 45px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    color: #120701;
-    font-size: 14px;
-    font-weight: 900;
-    border-radius: 11px;
-    background:
-      linear-gradient(
-        135deg,
-        #ffb16a,
-        #ff7518
-      );
-  }
-
-  @media (max-width: 600px) {
-    .promax-beat-lab-module {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .beat-lab-icon {
-      width: 72px;
-      height: 72px;
-      flex-basis: 72px;
-      font-size: 35px;
-    }
-
-    .beat-lab-button {
-      width: 100%;
-    }
-  }
-</style>
+    window.setTimeout(
+      () => {
+        window.location.replace(
+          BEAT_LAB_URL
+        );
+      },
+      300
+    );
+  </script>
+</body>
+</html>
