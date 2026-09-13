@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ht">
 <head>
@@ -11,70 +10,22 @@
 
   <meta name="theme-color" content="#050301">
 
+  <meta
+    name="description"
+    content="PRO-MAX Beat Lab — kreye beat, melody ak mizik konplè sou entènèt."
+  >
+
   <title>PRO-MAX Beat Lab</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      background: #050301;
-    }
-
-    .beat-lab-frame {
-      display: block;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      background: #050301;
-    }
-
-    .fallback {
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      color: #ffb16a;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      background:
-        radial-gradient(
-          circle at top,
-          #542000,
-          #050301 60%,
-          #000
-        );
-    }
-
-    .fallback a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 16px 25px;
-      color: #120701;
-      font-weight: 900;
-      text-decoration: none;
-      border-radius: 12px;
-      background:
-        linear-gradient(
-          135deg,
-          #ffb16a,
-          #ff7518
-        );
-    }
-  </style>
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  >
 </head>
 
 <body>
-  <div class="fallback">
-    <div>
+  <main class="fallback">
+    <section>
       <h1>PRO-MAX BEAT LAB</h1>
 
       <p>
@@ -83,17 +34,23 @@
 
       <a
         href="https://pro-max-beat-lab.louismaxauto600.chatgpt.site"
+        target="_blank"
+        rel="noopener"
       >
         OUVRI BEAT LAB
       </a>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <iframe
     class="beat-lab-frame"
+    id="beatLabFrame"
     src="https://pro-max-beat-lab.louismaxauto600.chatgpt.site"
     title="PRO-MAX Beat Lab"
     allow="autoplay; microphone; clipboard-write"
+    allowfullscreen
   ></iframe>
+
+  <script src="./javascript.js"></script>
 </body>
 </html>
